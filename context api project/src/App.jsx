@@ -1,7 +1,14 @@
+import Login from "./components/Login"
+import Profile from "./components/Profile"
+import UserContextPorvider from "./context/userContextPorvider"
 
 const App = () => {
   return (
-    <div>App</div>
+    <UserContextPorvider>
+      <h1>thid id react app</h1>
+      <Login />
+      <Profile />
+    </UserContextPorvider>
   )
 }
 
