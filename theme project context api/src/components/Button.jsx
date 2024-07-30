@@ -7,11 +7,13 @@ const Button = () => {
     const onChangeMode = (e) => {
         const darkModeStatus = e.currentTarget.checked
 
-        if(darkModeStatus){
+        if (darkModeStatus) {
+            document.body.style.backgroundColor = 'grey'
             darkTheme()
         }
-        else{
+        else {
             lightTheme()
+            document.body.style.backgroundColor = 'white'
         }
     }
 
